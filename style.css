@@ -183,7 +183,6 @@ main > section {
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: var(--space-5);
   align-items: end;
-  min-height: calc(100vh - 4rem);
 }
 
 .hero-name {
@@ -822,6 +821,13 @@ main > section {
   content: "—";
   position: absolute;
   left: 0;
+}
+
+/* resume bullets reused inside project detail panels (IT projects) */
+.project-detail .resume-bullets {
+  max-width: 60ch;
+  margin: var(--space-2) auto var(--space-4);
+  text-align: left;
 }
 
 /* ---------- Contact ---------- */
