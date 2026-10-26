@@ -263,17 +263,25 @@ main > section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.6rem;
   height: 2.6rem;
-  border: 1px solid var(--color-border);
-  color: var(--color-muted);
-  transition: border-color var(--transition), color var(--transition);
+  gap: var(--space-1);
+  padding: 0 var(--space-2);
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
 }
 
 .social-link:hover,
 .social-link:focus-visible {
-  border-color: var(--color-text);
-  color: var(--color-hover);
+  border-color: var(--color-border);
+  background: transparent;
+  color: var(--color-text);
 }
 
 .social-icon {
