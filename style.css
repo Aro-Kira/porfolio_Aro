@@ -193,6 +193,12 @@ main > section {
   letter-spacing: -0.02em;
 }
 
+.hero-full-name {
+  margin-top: var(--space-1);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
 .hero-role {
   margin-top: var(--space-2);
   font-family: var(--font-mono);
