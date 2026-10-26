@@ -182,7 +182,7 @@ main > section {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: var(--space-5);
-  align-items: end;
+  align-items: center;
 }
 
 .hero-name {
