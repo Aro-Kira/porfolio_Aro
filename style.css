@@ -725,14 +725,16 @@ main > section {
   margin-bottom: var(--space-2);
 }
 
-.photo-gallery--dense .gallery-item img {
+.photo-gallery--dense .gallery-item img,
+.photo-gallery--dense .gallery-item video {
   width: 100%;
   height: auto;
   display: block;
 }
 
 .gallery-item .media-placeholder,
-.gallery-item img {
+.gallery-item img,
+.gallery-item video {
   width: 100%;
 }
 
