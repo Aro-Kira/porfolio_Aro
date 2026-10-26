@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aro — Multimedia Creative and BS Information Technology student. Photography, videography, sound technology, and IT projects.">
+  <title>Aro — Multimedia Creative &amp; BSIT Student</title>
+  <!-- All styling lives in style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       SKIP LINK (accessibility) — links straight to the main content
+       ============================================================ -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       TOP NAVIGATION
+       EDIT: change the labels and the href anchor targets below.
+       Links point to sections further down this same page.
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main">
+      <!-- EDIT: site name / home link -->
+      <a class="site-logo" href="#home">Aro</a>
+      <!-- EDIT: navigation links -->
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         LANDING / HERO SECTION
+         EDIT: name, role line, introduction, interests, status line.
+         ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <!-- EDIT: your name -->
+        <h1 id="hero-title" class="hero-name">Aro</h1>
+        <!-- EDIT: role line -->
+        <p class="hero-role">Multimedia Creative &middot; BS Information Technology Student</p>
+        <!-- EDIT: main introduction -->
+        <p class="hero-intro">
+          &gt; I explore stories through photography, video, and sound, while
+          building my technical foundation as a BSIT student.
+        </p>
+        <!-- EDIT: interest list -->
+        <ul class="hero-interests" aria-label="Interests">
+          <li>Photography</li>
+          <li>Videography</li>
+          <li>Sound technology for production</li>
+          <li>Information Technology / software and technical projects</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="hero-cta" href="#projects">Explore Projects</a>
+          <!--
+            EDIT: Instagram link — replace the URL below with your profile
+            (https://www.instagram.com/aro.404png), or delete this whole
+            <a> block to remove the icon.
+          -->
+          <a class="social-link" href="https://www.instagram.com/aro.404png" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <!-- EDIT: optional status line -->
+        <p class="hero-status">[Based in / Available for opportunities — edit this text]</p>
+      </div>
+
+      <!--
+        OPTIONAL PORTRAIT / CREATIVE-WORK IMAGE
+        To use a real image, replace the placeholder block below with:
+
+        <figure class="hero-figure">
+          <img src="assets/images/profile-placeholder.jpg"
+               alt="Describe the portrait here — e.g. Portrait of Aro holding a camera">
+          <figcaption>[Optional caption]</figcaption>
+        </figure>
+
+        The hero is designed to work even if this image is removed entirely.
+      -->
+      <figure class="hero-figure">
+        <div class="media-placeholder media-placeholder--portrait" role="img" aria-label="Placeholder for a portrait or creative-work image of Aro">
+          <span>[Portrait image &mdash; add assets/images/profile-placeholder.jpg]</span>
+        </div>
+        <figcaption class="media-caption">[Optional caption — edit or remove]</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         A library/archive layout: category sidebar on the left,
+         project cards in the main area.
+         EDIT: every project title, year, role, summary, and media path.
+         ============================================================ -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="projects-layout">
+
+        <!-- --------------------------------------------------------
+             LEFT SIDEBAR — categories and project quick links
+             EDIT: add, remove, or rename categories and project links.
+             Each link points to its category grid further down.
+             -------------------------------------------------------- -->
+        <aside class="projects-sidebar" aria-label="Project categories">
+          <h2 class="sidebar-label" id="projects-title">Projects</h2>
+
+          <nav class="sidebar-nav" aria-label="Project categories">
+            <p class="sidebar-group-title">Multimedia</p>
+            <ul class="sidebar-list">
+              <li><a href="#photos">Photos</a></li>
+              <li><a href="#graphics">Graphics</a></li>
+              <li><a href="#promo-videos">Promotion Videos</a></li>
+              <li><a href="#reels">Reels / Highlights</a></li>
+              <li><a href="#films">Films</a></li>
+            </ul>
+
+            <p class="sidebar-group-title">IT Projects</p>
+            <ul class="sidebar-list">
+              <li><a href="#it-projects">Overview</a></li>
+              <li><a href="#project-myfairview">MyFairview</a></li>
+              <li><a href="#project-ecotumbler">EcoTumbler</a></li>
+              <li><a href="#project-glassify">Glassify</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- --------------------------------------------------------
+             MAIN PROJECT AREA — one subsection per category
+             -------------------------------------------------------- -->
+        <div class="projects-content">
+
+          <!-- ============ PHOTOS ============ -->
+          <section class="category" id="photos" aria-labelledby="photos-heading">
+            <h3 class="category-heading" id="photos-heading">Photos</h3>
+
+            <!--
+              EDIT PHOTO PROJECT: copy one whole <details> block to add
+              another photo project. Inside, replace:
+                - project title (summary + detail heading)
+                - [Project overview / context], [My role], [Date or year]
+                - placeholder blocks with real <img> tags (see comment in detail)
+            -->
+            <details class="project-card">
+              <summary class="project-summary">
+                <!-- EDIT: thumbnail — web-sized copy of a photowalk photo -->
+                <img src="assets/images/photowalk_manila/web/manila-gala-8600.jpg" alt="Manila Photowalk — cover photo" width="1200" height="800">
+                <span class="project-meta">
+                  <span class="project-title">Manila Photowalk</span>
+                  <span class="project-submeta">Photo &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <!-- EDIT: project heading shown when the card is open -->
+                <h4 class="detail-title">Manila Photowalk</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  EDIT: gallery of web-sized photos from
+                  assets/images/photowalk_manila/web/ (auto-generated from the
+                  originals — original files are kept in the parent folder).
+                  To add a photo: resize it into web/ and add a figure below.
+                  Optional: add a <figcaption class="media-caption"> under any
+                  image for a caption.
+                -->
+                <div class="photo-gallery photo-gallery--dense">
+                                    <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8543.jpg" alt="Manila Photowalk photo manila-gala-8543" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8555.jpg" alt="Manila Photowalk photo manila-gala-8555" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8558.jpg" alt="Manila Photowalk photo manila-gala-8558" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8559.jpg" alt="Manila Photowalk photo manila-gala-8559" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8566.jpg" alt="Manila Photowalk photo manila-gala-8566" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8569.jpg" alt="Manila Photowalk photo manila-gala-8569" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8577.jpg" alt="Manila Photowalk photo manila-gala-8577" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8583.jpg" alt="Manila Photowalk photo manila-gala-8583" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8589.jpg" alt="Manila Photowalk photo manila-gala-8589" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8590.jpg" alt="Manila Photowalk photo manila-gala-8590" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8594.jpg" alt="Manila Photowalk photo manila-gala-8594" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8600.jpg" alt="Manila Photowalk photo manila-gala-8600" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8601.jpg" alt="Manila Photowalk photo manila-gala-8601" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8603.jpg" alt="Manila Photowalk photo manila-gala-8603" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8607.jpg" alt="Manila Photowalk photo manila-gala-8607" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8615.jpg" alt="Manila Photowalk photo manila-gala-8615" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8617.jpg" alt="Manila Photowalk photo manila-gala-8617" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8619.jpg" alt="Manila Photowalk photo manila-gala-8619" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8627.jpg" alt="Manila Photowalk photo manila-gala-8627" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8629.jpg" alt="Manila Photowalk photo manila-gala-8629" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8631.jpg" alt="Manila Photowalk photo manila-gala-8631" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8635.jpg" alt="Manila Photowalk photo manila-gala-8635" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8637.jpg" alt="Manila Photowalk photo manila-gala-8637" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8661.jpg" alt="Manila Photowalk photo manila-gala-8661" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8666.jpg" alt="Manila Photowalk photo manila-gala-8666" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8671.jpg" alt="Manila Photowalk photo manila-gala-8671" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8699.jpg" alt="Manila Photowalk photo manila-gala-8699" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8719.jpg" alt="Manila Photowalk photo manila-gala-8719" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8722.jpg" alt="Manila Photowalk photo manila-gala-8722" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8726.jpg" alt="Manila Photowalk photo manila-gala-8726" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8729.jpg" alt="Manila Photowalk photo manila-gala-8729" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8730.jpg" alt="Manila Photowalk photo manila-gala-8730" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8732.jpg" alt="Manila Photowalk photo manila-gala-8732" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8733.jpg" alt="Manila Photowalk photo manila-gala-8733" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8734.jpg" alt="Manila Photowalk photo manila-gala-8734" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8742_1.jpg" alt="Manila Photowalk photo manila-gala-8742_1" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8744_1.jpg" alt="Manila Photowalk photo manila-gala-8744_1" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8800.jpg" alt="Manila Photowalk photo manila-gala-8800" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8809.jpg" alt="Manila Photowalk photo manila-gala-8809" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8814.jpg" alt="Manila Photowalk photo manila-gala-8814" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8832.jpg" alt="Manila Photowalk photo manila-gala-8832" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8841.jpg" alt="Manila Photowalk photo manila-gala-8841" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8848.jpg" alt="Manila Photowalk photo manila-gala-8848" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8851.jpg" alt="Manila Photowalk photo manila-gala-8851" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8852.jpg" alt="Manila Photowalk photo manila-gala-8852" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8855.jpg" alt="Manila Photowalk photo manila-gala-8855" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8856.jpg" alt="Manila Photowalk photo manila-gala-8856" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8857.jpg" alt="Manila Photowalk photo manila-gala-8857" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8864.jpg" alt="Manila Photowalk photo manila-gala-8864" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8865.jpg" alt="Manila Photowalk photo manila-gala-8865" loading="lazy" decoding="async">
+                  </figure>
+                  <figure class="gallery-item">
+                    <img src="assets/images/photowalk_manila/web/manila-gala-8866.jpg" alt="Manila Photowalk photo manila-gala-8866" loading="lazy" decoding="async">
+                  </figure>
+                </div>
+                <p class="detail-note">[Add a short description of the photowalk — route, location, or concept]</p>
+              </div>
+            </details>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Photo 02 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Photo Project Title 02</span>
+                  <span class="project-submeta">Photo &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Photo Project Title 02</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for photo 1 of Photo Project 02"><span>[Photo 01 &mdash; add assets/images/project-placeholder-01.jpg]</span></span>
+                    <figcaption class="media-caption">[Short caption for this photo]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-note">[Add a short description of the shoot, location, or concept]</p>
+              </div>
+            </details>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Photo 03 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Photo Project Title 03</span>
+                  <span class="project-submeta">Photo &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Photo Project Title 03</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for photo 1 of Photo Project 03"><span>[Photo 01 &mdash; add assets/images/project-placeholder-01.jpg]</span></span>
+                    <figcaption class="media-caption">[Short caption for this photo]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-note">[Add a short description of the shoot, location, or concept]</p>
+              </div>
+            </details>
+          </section>
+
+          <!-- ============ GRAPHICS ============ -->
+          <section class="category" id="graphics" aria-labelledby="graphics-heading">
+            <h3 class="category-heading" id="graphics-heading">Graphics</h3>
+
+            <!--
+              EDIT GRAPHICS PROJECT: graphic posters, pubmats, and similar
+              design work. Copy one whole <details> block to add another.
+              Replace the placeholder blocks with real <img> tags (see the
+              comment inside the detail panel).
+            -->
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Poster 01 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Graphic Poster / Pubmat Title 01</span>
+                  <span class="project-submeta">Graphic &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Graphic Poster / Pubmat Title 01</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context — e.g. event, client, or purpose]</dd></div>
+                  <div><dt>Role</dt><dd>[My role — e.g. layout, illustration, typography]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <!--
+                    EDIT: to use real graphics, replace each placeholder block with:
+
+                    <figure class="gallery-item">
+                      <img src="assets/images/poster-placeholder-01.jpg"
+                           alt="Describe the poster or pubmat">
+                      <figcaption>[Short caption — e.g. Event pubmat, final version]</figcaption>
+                    </figure>
+                  -->
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for graphic poster or pubmat 1"><span>[Poster / pubmat 01 &mdash; add assets/images/poster-placeholder-01.jpg]</span></span>
+                    <figcaption class="media-caption">[Short caption — e.g. final poster]</figcaption>
+                  </figure>
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for graphic poster or pubmat 2"><span>[Poster / pubmat 02 &mdash; add assets/images/poster-placeholder-02.jpg]</span></span>
+                    <figcaption class="media-caption">[Short caption — e.g. alternate version]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-note">[Add a short description of the design concept, tools used, or intended audience]</p>
+              </div>
+            </details>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Poster 02 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Graphic Poster / Pubmat Title 02</span>
+                  <span class="project-submeta">Graphic &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Graphic Poster / Pubmat Title 02</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context — e.g. event, client, or purpose]</dd></div>
+                  <div><dt>Role</dt><dd>[My role — e.g. layout, illustration, typography]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for graphic poster or pubmat 1"><span>[Poster / pubmat 01 &mdash; add assets/images/poster-placeholder-01.jpg]</span></span>
+                    <figcaption class="media-caption">[Short caption]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-note">[Add a short description of the design concept, tools used, or intended audience]</p>
+              </div>
+            </details>
+          </section>
+
+          <!-- ============ PROMOTION VIDEOS ============ -->
+          <section class="category" id="promo-videos" aria-labelledby="promo-heading">
+            <h3 class="category-heading" id="promo-heading">Promotion Videos</h3>
+
+            <!--
+              EDIT VIDEO PROJECT: copy a whole <details> block to add another.
+              Your films/videos live on YouTube — paste the embed iframe from
+              the comment inside each detail panel.
+            -->
+            <details class="project-card">
+              <summary class="project-summary">
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/KUXhMn1-4ps/maxresdefault.jpg" alt="Video thumbnail for the promotion video Startup" width="1280" height="720">
+                <span class="project-meta">
+                  <span class="project-title">Startup</span>
+                  <span class="project-submeta">Promotion Video &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Startup</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  EDIT: click-to-play poster + YouTube embed — video "Startup"
+                  by AroFlin. The sharp poster shows until the viewer presses
+                  play (pure HTML/CSS, no JavaScript).
+                -->
+                <input type="checkbox" class="video-play-toggle" id="play-startup">
+                <label class="video-poster" for="play-startup">
+                  <img src="https://i.ytimg.com/vi/KUXhMn1-4ps/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; Startup</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/KUXhMn1-4ps"
+                          title="Startup — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
+                </div>
+                <p class="detail-note">[Add a short description of the promotion video below]</p>
+              </div>
+            </details>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Video 02 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Promotion Video Project Title 02</span>
+                  <span class="project-submeta">Promotion Video &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Promotion Video Project Title 02</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  YOUTUBE EMBED: replace the placeholder box below with this,
+                  then swap YOUR_VIDEO_ID with the id from your YouTube link
+                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
+
+                  <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="[Project title]"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                  </div>
+                -->
+                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
+                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                </div>
+                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
+                <p class="detail-note">[Add a short description of the promotion video below]</p>
+              </div>
+            </details>
+          </section>
+
+          <!-- ============ REELS / HIGHLIGHTS ============ -->
+          <section class="category" id="reels" aria-labelledby="reels-heading">
+            <h3 class="category-heading" id="reels-heading">Reels / Highlights</h3>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Reel 01 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Reel or Highlight Project Title 01</span>
+                  <span class="project-submeta">Reel / Highlight &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Reel or Highlight Project Title 01</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  YOUTUBE EMBED: replace the placeholder box below with this,
+                  then swap YOUR_VIDEO_ID with the id from your YouTube link
+                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
+
+                  <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="[Project title]"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                  </div>
+                -->
+                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
+                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                </div>
+                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
+                <p class="detail-note">[Add a short description of the reel or highlight below]</p>
+              </div>
+            </details>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Reel 02 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Reel or Highlight Project Title 02</span>
+                  <span class="project-submeta">Reel / Highlight &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Reel or Highlight Project Title 02</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  YOUTUBE EMBED: replace the placeholder box below with this,
+                  then swap YOUR_VIDEO_ID with the id from your YouTube link
+                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
+
+                  <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="[Project title]"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                  </div>
+                -->
+                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
+                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                </div>
+                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
+                <p class="detail-note">[Add a short description of the reel or highlight below]</p>
+              </div>
+            </details>
+          </section>
+
+          <!-- ============ FILMS ============ -->
+          <section class="category" id="films" aria-labelledby="films-heading">
+            <h3 class="category-heading" id="films-heading">Films</h3>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/zOrfUW-BOfM/maxresdefault.jpg" alt="Video thumbnail for the film teksto" width="1280" height="720">
+                <span class="project-meta">
+                  <span class="project-title">teksto</span>
+                  <span class="project-submeta">Film &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">teksto</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  EDIT: click-to-play poster + YouTube embed — video "teksto"
+                  by AroFlin. The sharp poster shows until the viewer presses
+                  play (pure HTML/CSS, no JavaScript).
+                -->
+                <input type="checkbox" class="video-play-toggle" id="play-teksto">
+                <label class="video-poster" for="play-teksto">
+                  <img src="https://i.ytimg.com/vi/zOrfUW-BOfM/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; teksto</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/zOrfUW-BOfM"
+                          title="teksto — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
+                </div>
+                <p class="detail-note">[Add a short synopsis of the film below]</p>
+              </div>
+            </details>
+
+            <details class="project-card">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Film 02 &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Film Project Title 02</span>
+                  <span class="project-submeta">Film &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Film Project Title 02</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  YOUTUBE EMBED: replace the placeholder box below with this,
+                  then swap YOUR_VIDEO_ID with the id from your YouTube link
+                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
+
+                  <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                            title="[Project title]"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                  </div>
+                -->
+                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
+                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                </div>
+                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
+                <p class="detail-note">[Add a short synopsis of the film below]</p>
+              </div>
+            </details>
+          </section>
+
+          <!-- ============ IT PROJECTS ============ -->
+          <section class="category" id="it-projects" aria-labelledby="it-heading">
+            <h3 class="category-heading" id="it-heading">IT Projects</h3>
+
+            <!--
+              EDIT IT PROJECTS: MyFairview, EcoTumbler, and Glassify are the
+              three supplied project names — keep them exactly as written.
+              Replace every [Add details] placeholder with real information.
+              Do not invent features, technologies, or repository links.
+            -->
+
+            <!-- ---- MyFairview ---- -->
+            <details class="project-card" id="project-myfairview">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Screenshot &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">MyFairview</span>
+                  <span class="project-submeta">IT Project &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">MyFairview</h4>
+                <dl class="detail-facts">
+                  <div><dt>Summary</dt><dd>[Add project summary]</dd></div>
+                  <div><dt>Problem</dt><dd>[Add the problem this project addresses]</dd></div>
+                  <div><dt>Technologies</dt><dd>[Add technologies used]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / contribution]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <!--
+                    EDIT: replace the placeholder with a real screenshot:
+
+                    <figure class="gallery-item">
+                      <img src="assets/images/myfairview-screenshot.jpg"
+                           alt="Screenshot or diagram of MyFairview">
+                      <figcaption>[Short caption]</figcaption>
+                    </figure>
+                  -->
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for a screenshot or diagram of MyFairview"><span>[Screenshot or diagram &mdash; add image]</span></span>
+                    <figcaption class="media-caption">[Short caption]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-links">
+                  <a href="#" aria-disabled="true">[Add repository or live-demo link]</a>
+                </p>
+              </div>
+            </details>
+
+            <!-- ---- EcoTumbler ---- -->
+            <details class="project-card" id="project-ecotumbler">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Screenshot &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">EcoTumbler</span>
+                  <span class="project-submeta">IT Project &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">EcoTumbler</h4>
+                <dl class="detail-facts">
+                  <div><dt>Summary</dt><dd>[Add project summary]</dd></div>
+                  <div><dt>Problem</dt><dd>[Add the problem this project addresses]</dd></div>
+                  <div><dt>Technologies</dt><dd>[Add technologies used]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / contribution]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for a screenshot or diagram of EcoTumbler"><span>[Screenshot or diagram &mdash; add image]</span></span>
+                    <figcaption class="media-caption">[Short caption]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-links">
+                  <a href="#" aria-disabled="true">[Add repository or live-demo link]</a>
+                </p>
+              </div>
+            </details>
+
+            <!-- ---- Glassify ---- -->
+            <details class="project-card" id="project-glassify">
+              <summary class="project-summary">
+                <span class="media-placeholder" aria-hidden="true"><span>[Screenshot &mdash; add thumbnail]</span></span>
+                <span class="project-meta">
+                  <span class="project-title">Glassify</span>
+                  <span class="project-submeta">IT Project &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Glassify</h4>
+                <dl class="detail-facts">
+                  <div><dt>Summary</dt><dd>[Add project summary]</dd></div>
+                  <div><dt>Problem</dt><dd>[Add the problem this project addresses]</dd></div>
+                  <div><dt>Technologies</dt><dd>[Add technologies used]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / contribution]</dd></div>
+                </dl>
+                <div class="photo-gallery">
+                  <figure class="gallery-item">
+                    <span class="media-placeholder media-placeholder--gallery" role="img" aria-label="Placeholder for a screenshot or diagram of Glassify"><span>[Screenshot or diagram &mdash; add image]</span></span>
+                    <figcaption class="media-caption">[Short caption]</figcaption>
+                  </figure>
+                </div>
+                <p class="detail-links">
+                  <a href="#" aria-disabled="true">[Add repository or live-demo link]</a>
+                </p>
+              </div>
+            </details>
+          </section>
+
+        </div><!-- /.projects-content -->
+      </div><!-- /.projects-layout -->
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE SECTION
+         Skills first (Multimedia primary, IT secondary), then a
+         resume-style activity list, then education.
+         EDIT: only keep skills that are accurate for you.
+         ============================================================ -->
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-heading" id="experience-title">Experience</h2>
+
+      <!-- ---------- A. SKILLS ---------- -->
+      <div class="skills">
+        <!-- EDIT: Multimedia — primary skills -->
+        <div class="skills-group">
+          <h3 class="skills-label">Multimedia &mdash; Primary</h3>
+          <ul class="skills-list">
+            <li>Photography &mdash; [Add specific skills / equipment]</li>
+            <li>Videography &mdash; [Add camera, framing, or shooting skills]</li>
+            <li>Video Editing &mdash; [Add editing tools and techniques]</li>
+            <li>Sound Technology / Production Audio &mdash; [Add recording, mixing, or audio setup skills]</li>
+            <li>Production Support &mdash; [Add relevant responsibilities]</li>
+          </ul>
+        </div>
+
+        <!-- EDIT: Information Technology — secondary skills -->
+        <div class="skills-group">
+          <h3 class="skills-label">Information Technology &mdash; Secondary</h3>
+          <ul class="skills-list">
+            <li>Programming &mdash; [Add languages]</li>
+            <li>Web / App Development &mdash; [Add technologies]</li>
+            <li>IT Support &amp; Troubleshooting &mdash; [Add relevant skills]</li>
+            <li>Hardware / Software &mdash; [Add relevant skills]</li>
+            <li>Tools &mdash; [Add tools actually used]</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ---------- B. EXPERIENCE / ACTIVITIES ---------- -->
+      <div class="resume-block">
+        <h3 class="resume-label">Experience / Activities</h3>
+
+        <!--
+          EDIT: example template entry below — replace it with your real
+          roles, organizations, productions, or volunteer activities.
+          Copy the whole <article> block to add more entries.
+          Do not invent employment, client, production, or volunteer history.
+        -->
+        <article class="resume-entry">
+          <header class="resume-entry-header">
+            <h4 class="resume-role">[Role / Position]</h4>
+            <p class="resume-org">[Organization / Project]</p>
+            <p class="resume-dates">[Dates] &middot; [Location, optional]</p>
+          </header>
+          <ul class="resume-bullets">
+            <li>[Contribution or responsibility — edit]</li>
+            <li>[Contribution or responsibility — edit]</li>
+            <li>[Contribution or responsibility — edit]</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- ---------- C. EDUCATION ---------- -->
+      <div class="resume-block">
+        <h3 class="resume-label">Education</h3>
+        <article class="resume-entry">
+          <header class="resume-entry-header">
+            <h4 class="resume-role">Bachelor of Science in Information Technology (BSIT)</h4>
+            <p class="resume-org">[School name]</p>
+            <p class="resume-dates">[Expected graduation year]</p>
+          </header>
+          <ul class="resume-bullets">
+            <li>[Relevant coursework or activities — optional]</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         EDIT: email address and LinkedIn URL below.
+         ============================================================ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-heading" id="contact-title">Contact</h2>
+
+      <!-- EDIT: direct contact links — replace the placeholders -->
+      <ul class="contact-links">
+        <!-- EDIT: replace [your-email@example.com] with your real address in BOTH places -->
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:[your-email@example.com]">[your-email@example.com]</a>
+        </li>
+        <!-- EDIT: replace with your real LinkedIn profile URL in BOTH places -->
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="[Your LinkedIn profile URL]" rel="noopener">[Your LinkedIn profile URL]</a>
+        </li>
+        <!-- OPTIONAL: add another portfolio or social link here
+        <li>
+          <span class="contact-label">Other</span>
+          <a href="[Other relevant portfolio or social link]">[Other relevant portfolio or social link]</a>
+        </li>
+        -->
+      </ul>
+
+      <!--
+        CONTACT FORM
+        IMPORTANT: This form has no working backend. It will NOT send
+        messages as it is. To make it functional, connect it to a form
+        service (e.g. Formspree, Netlify Forms) or your own backend by
+        setting a real `action` URL and `method="POST"`. Until then the
+        submit button will do nothing useful — that is intentional, and
+        no fake "message sent" state is shown here.
+      -->
+      <form class="contact-form" action="#" method="post">
+        <div class="form-field">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="6" required></textarea>
+        </div>
+        <!-- EDIT: once a form service is connected, update the form's action above -->
+        <button type="submit" class="form-submit">Send Message</button>
+        <p class="form-note">[Note: this form is not connected to a backend yet — it will not send messages until a form service or server is added.]</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       EDIT: the credit line below.
+       ============================================================ -->
+  <footer class="site-footer">
+    <a class="back-to-top" href="#home">&uarr; Back to Top</a>
+    <p class="footer-credit">&copy; Aro — [Add year] &middot; [Edit this credit line]</p>
+  </footer>
+
+</body>
+</html>
