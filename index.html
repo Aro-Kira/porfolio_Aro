@@ -77,22 +77,19 @@
       </div>
 
       <!--
-        OPTIONAL PORTRAIT / CREATIVE-WORK IMAGE
-        To use a real image, replace the placeholder block below with:
-
-        <figure class="hero-figure">
-          <img src="assets/images/profile-placeholder.jpg"
-               alt="Describe the portrait here — e.g. Portrait of Aro holding a camera">
-          <figcaption>[Optional caption]</figcaption>
-        </figure>
-
-        The hero is designed to work even if this image is removed entirely.
+        PORTRAIT IMAGE — currently: assets/images/profile for portfolio v2.jpg
+        To swap the photo, replace the src below (keep the %20 encoding for
+        spaces, or rename the file to something without spaces). Also update
+        the alt text to describe the new photo. The hero works even if this
+        <figure> is removed entirely.
       -->
       <figure class="hero-figure">
-        <div class="media-placeholder media-placeholder--portrait" role="img" aria-label="Placeholder for a portrait or creative-work image of Aro">
-          <span>[Portrait image &mdash; add assets/images/profile-placeholder.jpg]</span>
-        </div>
-        <figcaption class="media-caption">[Optional caption — edit or remove]</figcaption>
+        <img src="assets/images/profile%20for%20portfolio%20v2.jpg"
+             alt="Portrait of Aro"
+             width="1052" height="1052">
+        <!-- OPTIONAL: caption under the portrait — edit or delete
+        <figcaption class="media-caption">[Optional caption]</figcaption>
+        -->
       </figure>
     </section>
 
@@ -512,38 +509,44 @@
               </div>
             </details>
 
+            <!-- EDIT PROMO 02: Pepsi Commercial — video by AroFlin -->
             <details class="project-card">
               <summary class="project-summary">
-                <span class="media-placeholder" aria-hidden="true"><span>[Video 02 &mdash; add thumbnail]</span></span>
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/2EFOB8oD8dU/maxresdefault.jpg" alt="Video thumbnail for the Pepsi Commercial promotion video" width="1280" height="720">
                 <span class="project-meta">
-                  <span class="project-title">Promotion Video Project Title 02</span>
+                  <span class="project-title">Pepsi Commercial | Project *School Purposes*</span>
                   <span class="project-submeta">Promotion Video &middot; [Add year]</span>
                 </span>
                 <span class="project-toggle" aria-hidden="true"></span>
               </summary>
               <div class="project-detail">
-                <h4 class="detail-title">Promotion Video Project Title 02</h4>
+                <h4 class="detail-title">Pepsi Commercial | Project *School Purposes*</h4>
                 <dl class="detail-facts">
                   <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
                   <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
                   <div><dt>Date</dt><dd>[Date or year]</dd></div>
                 </dl>
                 <!--
-                  YOUTUBE EMBED: replace the placeholder box below with this,
-                  then swap YOUR_VIDEO_ID with the id from your YouTube link
-                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
-
-                  <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="[Project title]"
-                            loading="lazy"
-                            allowfullscreen></iframe>
-                  </div>
+                  EDIT: click-to-play poster + YouTube embed — video "Pepsi
+                  Commercial | Project *School Purposes*" by AroFlin. The sharp
+                  poster shows until the viewer presses play (pure HTML/CSS,
+                  no JavaScript).
                 -->
-                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
-                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                <input type="checkbox" class="video-play-toggle" id="play-pepsi">
+                <label class="video-poster" for="play-pepsi">
+                  <img src="https://i.ytimg.com/vi/2EFOB8oD8dU/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; Pepsi Commercial</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/2EFOB8oD8dU"
+                          title="Pepsi Commercial | Project *School Purposes* — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
                 </div>
-                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
                 <p class="detail-note">[Add a short description of the promotion video below]</p>
               </div>
             </details>
@@ -553,74 +556,84 @@
           <section class="category" id="reels" aria-labelledby="reels-heading">
             <h3 class="category-heading" id="reels-heading">Reels / Highlights</h3>
 
+            <!-- EDIT REEL 01: RG GenS — video by AroFlin -->
             <details class="project-card">
               <summary class="project-summary">
-                <span class="media-placeholder" aria-hidden="true"><span>[Reel 01 &mdash; add thumbnail]</span></span>
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/QjDa3BSU0ig/maxresdefault.jpg" alt="Video thumbnail for the RG GenS highlight reel" width="1280" height="720">
                 <span class="project-meta">
-                  <span class="project-title">Reel or Highlight Project Title 01</span>
+                  <span class="project-title">RG GenS</span>
                   <span class="project-submeta">Reel / Highlight &middot; [Add year]</span>
                 </span>
                 <span class="project-toggle" aria-hidden="true"></span>
               </summary>
               <div class="project-detail">
-                <h4 class="detail-title">Reel or Highlight Project Title 01</h4>
+                <h4 class="detail-title">RG GenS</h4>
                 <dl class="detail-facts">
                   <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
                   <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
                   <div><dt>Date</dt><dd>[Date or year]</dd></div>
                 </dl>
                 <!--
-                  YOUTUBE EMBED: replace the placeholder box below with this,
-                  then swap YOUR_VIDEO_ID with the id from your YouTube link
-                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
-
-                  <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="[Project title]"
-                            loading="lazy"
-                            allowfullscreen></iframe>
-                  </div>
+                  EDIT: click-to-play poster + YouTube embed — video "RG GenS"
+                  by AroFlin. The sharp poster shows until the viewer presses
+                  play (pure HTML/CSS, no JavaScript).
                 -->
-                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
-                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                <input type="checkbox" class="video-play-toggle" id="play-rggens">
+                <label class="video-poster" for="play-rggens">
+                  <img src="https://i.ytimg.com/vi/QjDa3BSU0ig/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; RG GenS</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/QjDa3BSU0ig"
+                          title="RG GenS — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
                 </div>
-                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
                 <p class="detail-note">[Add a short description of the reel or highlight below]</p>
               </div>
             </details>
 
+            <!-- EDIT REEL 02: NAGBSA KNBA? | HIGHLIGHTS — video by AroFlin -->
             <details class="project-card">
               <summary class="project-summary">
-                <span class="media-placeholder" aria-hidden="true"><span>[Reel 02 &mdash; add thumbnail]</span></span>
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/75urVbupP8E/maxresdefault.jpg" alt="Video thumbnail for the NAGBSA KNBA? highlights reel" width="1280" height="720">
                 <span class="project-meta">
-                  <span class="project-title">Reel or Highlight Project Title 02</span>
+                  <span class="project-title">NAGBSA KNBA? | HIGHLIGHTS</span>
                   <span class="project-submeta">Reel / Highlight &middot; [Add year]</span>
                 </span>
                 <span class="project-toggle" aria-hidden="true"></span>
               </summary>
               <div class="project-detail">
-                <h4 class="detail-title">Reel or Highlight Project Title 02</h4>
+                <h4 class="detail-title">NAGBSA KNBA? | HIGHLIGHTS</h4>
                 <dl class="detail-facts">
                   <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
                   <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
                   <div><dt>Date</dt><dd>[Date or year]</dd></div>
                 </dl>
                 <!--
-                  YOUTUBE EMBED: replace the placeholder box below with this,
-                  then swap YOUR_VIDEO_ID with the id from your YouTube link
-                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
-
-                  <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="[Project title]"
-                            loading="lazy"
-                            allowfullscreen></iframe>
-                  </div>
+                  EDIT: click-to-play poster + YouTube embed — video "NAGBSA
+                  KNBA? | HIGHLIGHTS" by AroFlin. The sharp poster shows until
+                  the viewer presses play (pure HTML/CSS, no JavaScript).
                 -->
-                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
-                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
+                <input type="checkbox" class="video-play-toggle" id="play-nagbsa">
+                <label class="video-poster" for="play-nagbsa">
+                  <img src="https://i.ytimg.com/vi/75urVbupP8E/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; NAGBSA KNBA? | HIGHLIGHTS</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/75urVbupP8E"
+                          title="NAGBSA KNBA? | HIGHLIGHTS — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
                 </div>
-                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
                 <p class="detail-note">[Add a short description of the reel or highlight below]</p>
               </div>
             </details>
@@ -630,6 +643,130 @@
           <section class="category" id="films" aria-labelledby="films-heading">
             <h3 class="category-heading" id="films-heading">Films</h3>
 
+            <!-- EDIT FILM 01: Pasan — video by AroFlin -->
+            <details class="project-card">
+              <summary class="project-summary">
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/a1NhLvL442U/maxresdefault.jpg" alt="Video thumbnail for the film Pasan" width="1280" height="720">
+                <span class="project-meta">
+                  <span class="project-title">Pasan</span>
+                  <span class="project-submeta">Film &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Pasan</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  EDIT: click-to-play poster + YouTube embed — video "Pasan"
+                  by AroFlin. The sharp poster shows until the viewer presses
+                  play (pure HTML/CSS, no JavaScript).
+                -->
+                <input type="checkbox" class="video-play-toggle" id="play-pasan">
+                <label class="video-poster" for="play-pasan">
+                  <img src="https://i.ytimg.com/vi/a1NhLvL442U/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; Pasan</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/a1NhLvL442U"
+                          title="Pasan — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
+                </div>
+                <p class="detail-note">[Add a short synopsis of the film below]</p>
+              </div>
+            </details>
+
+            <!-- EDIT FILM 02: Simulation — video by AroFlin -->
+            <details class="project-card">
+              <summary class="project-summary">
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/eNwiyLpi7Q0/maxresdefault.jpg" alt="Video thumbnail for the film Simulation" width="1280" height="720">
+                <span class="project-meta">
+                  <span class="project-title">Simulation</span>
+                  <span class="project-submeta">Film &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Simulation</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  EDIT: click-to-play poster + YouTube embed — video
+                  "Simulation" by AroFlin. The sharp poster shows until the
+                  viewer presses play (pure HTML/CSS, no JavaScript).
+                -->
+                <input type="checkbox" class="video-play-toggle" id="play-simulation">
+                <label class="video-poster" for="play-simulation">
+                  <img src="https://i.ytimg.com/vi/eNwiyLpi7Q0/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; Simulation</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/eNwiyLpi7Q0"
+                          title="Simulation — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
+                </div>
+                <p class="detail-note">[Add a short synopsis of the film below]</p>
+              </div>
+            </details>
+
+            <!-- EDIT FILM 03: Excomp Final Project 1 — video by AroFilms -->
+            <details class="project-card">
+              <summary class="project-summary">
+                <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
+                <img src="https://i.ytimg.com/vi/mV_ZCFuKRGY/maxresdefault.jpg" alt="Video thumbnail for the film Excomp Final Project 1" width="1280" height="720">
+                <span class="project-meta">
+                  <span class="project-title">Excomp Final Project 1</span>
+                  <span class="project-submeta">Film &middot; [Add year]</span>
+                </span>
+                <span class="project-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="project-detail">
+                <h4 class="detail-title">Excomp Final Project 1</h4>
+                <dl class="detail-facts">
+                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
+                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
+                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
+                </dl>
+                <!--
+                  EDIT: click-to-play poster + YouTube embed — video "Excomp
+                  Final Project 1" by AroFilms. The sharp poster shows until
+                  the viewer presses play (pure HTML/CSS, no JavaScript).
+                -->
+                <input type="checkbox" class="video-play-toggle" id="play-excomp">
+                <label class="video-poster" for="play-excomp">
+                  <img src="https://i.ytimg.com/vi/mV_ZCFuKRGY/maxresdefault.jpg" alt="" loading="lazy">
+                  <span class="video-poster-play" aria-hidden="true"></span>
+                  <span class="video-poster-caption">&#9654; Play video &mdash; Excomp Final Project 1</span>
+                </label>
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/mV_ZCFuKRGY"
+                          title="Excomp Final Project 1 — YouTube video player"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen></iframe>
+                </div>
+                <p class="detail-note">[Add a short synopsis of the film below]</p>
+              </div>
+            </details>
+
+            <!-- EDIT FILM 04: teksto — video by AroFlin -->
             <details class="project-card">
               <summary class="project-summary">
                 <!-- EDIT: thumbnail image — hosted on YouTube; replace with a local screenshot if preferred -->
@@ -666,42 +803,6 @@
                           referrerpolicy="strict-origin-when-cross-origin"
                           allowfullscreen></iframe>
                 </div>
-                <p class="detail-note">[Add a short synopsis of the film below]</p>
-              </div>
-            </details>
-
-            <details class="project-card">
-              <summary class="project-summary">
-                <span class="media-placeholder" aria-hidden="true"><span>[Film 02 &mdash; add thumbnail]</span></span>
-                <span class="project-meta">
-                  <span class="project-title">Film Project Title 02</span>
-                  <span class="project-submeta">Film &middot; [Add year]</span>
-                </span>
-                <span class="project-toggle" aria-hidden="true"></span>
-              </summary>
-              <div class="project-detail">
-                <h4 class="detail-title">Film Project Title 02</h4>
-                <dl class="detail-facts">
-                  <div><dt>Overview</dt><dd>[Project overview / context]</dd></div>
-                  <div><dt>Role</dt><dd>[My role / responsibilities]</dd></div>
-                  <div><dt>Date</dt><dd>[Date or year]</dd></div>
-                </dl>
-                <!--
-                  YOUTUBE EMBED: replace the placeholder box below with this,
-                  then swap YOUR_VIDEO_ID with the id from your YouTube link
-                  (https://www.youtube.com/watch?v=ABC123 → ABC123):
-
-                  <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                            title="[Project title]"
-                            loading="lazy"
-                            allowfullscreen></iframe>
-                  </div>
-                -->
-                <div class="video-embed video-embed--placeholder" role="img" aria-label="Placeholder for this project video">
-                  <span>[YouTube embed &mdash; replace this box with an iframe, see comment above]</span>
-                </div>
-                <p class="detail-note">[Placeholder video — paste your YouTube embed here]</p>
                 <p class="detail-note">[Add a short synopsis of the film below]</p>
               </div>
             </details>

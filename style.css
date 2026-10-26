@@ -288,6 +288,13 @@ main > section {
   max-width: 360px;
 }
 
+.hero-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+}
+
 .media-caption {
   margin-top: var(--space-1);
   font-family: var(--font-mono);
